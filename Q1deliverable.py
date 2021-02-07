@@ -10,6 +10,8 @@ def VolumeCalc(len):
             return "Length cannot be negative"
     except TypeError:
         return "Type Error! Try again"
+    except OverflowError:
+        return "Overflow Error! Try again"
 
 
 class TestVolumeCalc(unittest.TestCase):
